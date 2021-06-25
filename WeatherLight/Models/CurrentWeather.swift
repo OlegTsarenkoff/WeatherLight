@@ -13,8 +13,10 @@ struct CurrentWeather {
     let feelsLikeTemp: String
     let weatherCode: String
     let conditionWeather: String
-    let date: String
+    
+// Вот тут у меня начался многочасовой тормоз, тк не понимаю как мне вынять данные :(
     let hourly: String
+    
     
     var systemIconNameString: String {
         switch weatherCode {
@@ -38,8 +40,8 @@ struct CurrentWeather {
         feelsLikeTemp = currentWeatherData.data.currentCondition.first!.feelsLikeC
         weatherCode = currentWeatherData.data.currentCondition.first!.weatherCode
         conditionWeather = currentWeatherData.data.currentCondition.first!.weatherDesc.first!.value
-        date = currentWeatherData.data.weather.first!.date
-        hourly = currentWeatherData.data.weather.first!.hourly.first!.time
         
+//Ну и соответсвенно тут полный бред, тк мне каждое значение time нужно, чтобы назначить temp и icon
+        hourly = currentWeatherData.data.weather.first!.hourly.first!.time
     }
 }
