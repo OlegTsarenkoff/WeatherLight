@@ -44,6 +44,7 @@
 				241E51FE2685A86F0015A6E5 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		241E51FE2685A86F0015A6E5 /* Products */ = {
 			isa = PBXGroup;
@@ -56,15 +57,55 @@
 		241E51FF2685A86F0015A6E5 /* WeatherLight */ = {
 			isa = PBXGroup;
 			children = (
-				241E52002685A86F0015A6E5 /* AppDelegate.swift */,
-				241E52022685A86F0015A6E5 /* SceneDelegate.swift */,
-				241E52042685A86F0015A6E5 /* ViewController.swift */,
-				241E52062685A86F0015A6E5 /* Main.storyboard */,
-				241E52092685A8740015A6E5 /* Assets.xcassets */,
-				241E520B2685A8740015A6E5 /* LaunchScreen.storyboard */,
-				241E520E2685A8740015A6E5 /* Info.plist */,
+				241E52182685A8D50015A6E5 /* Extention */,
+				241E52172685A8CB0015A6E5 /* Views */,
+				241E52162685A8B10015A6E5 /* Supporting Files */,
+				241E52152685A8AB0015A6E5 /* Models */,
+				241E52142685A88F0015A6E5 /* View Controllers */,
 			);
 			path = WeatherLight;
+			sourceTree = "<group>";
+		};
+		241E52142685A88F0015A6E5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				241E52042685A86F0015A6E5 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		241E52152685A8AB0015A6E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		241E52162685A8B10015A6E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				241E52002685A86F0015A6E5 /* AppDelegate.swift */,
+				241E52022685A86F0015A6E5 /* SceneDelegate.swift */,
+				241E52092685A8740015A6E5 /* Assets.xcassets */,
+				241E520E2685A8740015A6E5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		241E52172685A8CB0015A6E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				241E52062685A86F0015A6E5 /* Main.storyboard */,
+				241E520B2685A8740015A6E5 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		241E52182685A8D50015A6E5 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +329,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
-				INFOPLIST_FILE = WeatherLight/Info.plist;
+				INFOPLIST_FILE = "WeatherLight/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.TsarenkoffOS.WeatherLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +349,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
-				INFOPLIST_FILE = WeatherLight/Info.plist;
+				INFOPLIST_FILE = "WeatherLight/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.TsarenkoffOS.WeatherLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
