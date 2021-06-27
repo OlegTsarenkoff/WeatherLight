@@ -1,55 +1,55 @@
 {
   "images" : [
     {
-      "filename" : "day-and-night_40px.png",
+      "filename" : "AppIcon_40.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "day-and-night_60px.png",
+      "filename" : "AppIcon_60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "day-and-night_58px.png",
+      "filename" : "AppIcon_58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "day-and-night_87px.png",
+      "filename" : "AppIcon_87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "day-and-night_80px.png",
+      "filename" : "AppIcon_80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "day-and-night_120px.png",
+      "filename" : "AppIcon_120.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "day-and-night_120px-1.png",
+      "filename" : "AppIcon_120-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "day-and-night_180px.png",
+      "filename" : "AppIcon_180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "day-and-night_1024px.png",
+      "filename" : "AppIcon_1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
