@@ -53,6 +53,14 @@ class ViewController: UIViewController {
             self.feelLikeTempLabel.text = weather.feelsLikeTemp
             self.temperatureLabel.text = weather.currentTemp
             self.weatherIconImageView.image = UIImage(systemName: weather.systemIconNameString)
+            self.nightTemp.text = weather.hourly[0].tempC
+            self.nightImageWeather.image = UIImage(systemName: weather.weatherCode)
+            self.morningTemp.text = weather.hourly[1].tempC
+           //self.morningImageWeather.image = UIImage(systemName: weather.hourly[0].weatherCode)
+            self.dayTemp.text = weather.hourly[2].tempC
+           //self.dayImageWeather.image = UIImage(systemName: weather.hourly[0].weatherCode)
+            self.eveningTemp.text = weather.hourly[3].tempC
+            //self.eveningImageWeather.image = UIImage(systemName: weather.hourly[0].weatherCode)
         }
     }
     

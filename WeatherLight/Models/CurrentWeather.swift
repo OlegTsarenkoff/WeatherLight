@@ -13,10 +13,7 @@ struct CurrentWeather {
     let feelsLikeTemp: String
     let weatherCode: String
     let conditionWeather: String
-    
-// Вот тут у меня начался многочасовой тормоз, тк не понимаю как мне вынять данные :(
-    let hourly: String
-    
+    let hourly: [Hourly]
     
     var systemIconNameString: String {
         switch weatherCode {
@@ -31,7 +28,6 @@ struct CurrentWeather {
         case "386", "389", "392", "395": return "cloud.bolt.fill"
         default: return "nosign"
         }
-        
     }
     
     init?(currentWeatherData: CurrentWeatherData) {
@@ -40,8 +36,7 @@ struct CurrentWeather {
         feelsLikeTemp = currentWeatherData.data.currentCondition.first!.feelsLikeC
         weatherCode = currentWeatherData.data.currentCondition.first!.weatherCode
         conditionWeather = currentWeatherData.data.currentCondition.first!.weatherDesc.first!.value
-        
-//Ну и соответсвенно тут полный бред, тк мне каждое значение time нужно, чтобы назначить temp и icon
-        hourly = currentWeatherData.data.weather.first!.hourly.first!.time
+        hourly = currentWeatherData.data.weather.first!.hourly
     }
 }
+

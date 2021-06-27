@@ -17,7 +17,7 @@ struct DataClass: Decodable {
     let request: [Request]
     let currentCondition: [CurrentCondition]
     let weather: [WeatherElement]
-
+    
     enum CodingKeys: String, CodingKey {
         case request
         case currentCondition = "current_condition"
@@ -30,7 +30,7 @@ struct CurrentCondition: Decodable {
     let tempC, weatherCode: String
     let weatherDesc: [Weather]
     let feelsLikeC: String
-
+    
     enum CodingKeys: String, CodingKey {
         case tempC = "temp_C"
         case weatherCode
